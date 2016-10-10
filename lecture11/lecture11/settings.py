@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'music.apps.MusicConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles', #Needed for static files
     'formexample',
-    'music',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +124,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "formexample","static"),
+    os.path.join(BASE_DIR, "music", "static"),
 ]
 
 # STATICFILES_FINDERS = [
