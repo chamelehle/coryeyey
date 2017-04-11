@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- BOOTSTRAP (style only)-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+-->
+    <title>Home</title>
+    <script type="text/javascript" src="groceries.js"></script>
+    <script type="text/javascript">
+
+    </script>
+
+    <link rel="stylesheet" href="photo.css" />
+  </head>
+  <body lang="en-US" onload="firston();laston();addon();favon()" >
+
+  <H1>User Information</H1><br>
+  <button id="back" onclick="home()"> Home </button><br>
+  <div id="wrap">
+    <div id="contentBox">
+      <div class="column">
+
+  <H3>First Name</H3>
+  <input type="text" id="fn"  placeholder="First Name">
+  <button id = "fn" onclick="firstname()"> Add </button><br>
+
+  <H3>Last Name</H3>
+  <input type="text" id="ln" placeholder="Last Name">
+  <button id = "ln" onclick="lastname()"> Add </button><br>
+
+  <H3>Address</H3>
+  <input type="text" id="ad" placeholder="Address">
+  <button id = "ad" onclick="address()"> Add </button><br>
+
+  <H3>Favorite Color</H3>
+  <input type="text" id="fc" placeholder="Favorite Color">
+  <button id = "fc" onclick="color()"> Add </button><br><br>
+</div>
+<div class="column">
+  <H3>First Name</H3>
+  <output id='fval'></output><br>
+
+  <H3>Last Name</H3>
+  <output id='lval'></output><br>
+
+  <H3>Address</H3>
+  <output id='aval'></output><br>
+
+  <H3>Favorite Color</H3>
+  <output id='fcval'></output>
+</div>
+</div>
+</div>
+  <div id="footer">
+  <footer>Copyright © CHorp</footer>
+</div>
+
+
+</body>
+</head>
