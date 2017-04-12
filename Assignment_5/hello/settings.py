@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #'django_google_maps'
     'app.apps.AppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -119,7 +120,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-
+#GOOGLE_MAPS_API_KEY = 'AIzaSyAVqmNjqwxa-4JvTl2I1Ew_3A8MTZCxKhU'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "hello","static"), os.path.join(BASE_DIR, 'assets'),]
