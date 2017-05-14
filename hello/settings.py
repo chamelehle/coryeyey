@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definitionsdgffsd
+# Application definitionasdsasdgffsd
 
 INSTALLED_APPS = [
     'leaflet',
