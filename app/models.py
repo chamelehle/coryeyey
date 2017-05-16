@@ -1,6 +1,8 @@
 
 from django.db import models
 from django.contrib.gis.geos import GEOSGeometry
+from django.utils import timezone
+
 #from djgeojson.fields import PointField
 #from django.contrib.gis.db import models as gismodels
 

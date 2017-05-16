@@ -42,11 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'easy_maps',
+    #'django.contrib.comments',
     #'webpack_loader',
 ]
 
+
 MIDDLEWARE = [
-    #'django.contrib.auth.middleware'
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -54,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'django.contrib.auth.middleware'
 ]
 
 ROOT_URLCONF = 'hello.urls'
@@ -127,7 +130,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "hello","static"), os.path.join(BASE_DIR, 'assets'),]
-
+EASY_MAPS_GOOGLE_MAPS_API_KEY = 'AIzaSyDYUlSGH9ZYjfc1hKqc522qJB4HiZYQpKc'
 #WEBPACK_LOADER = {
 #    'DEFAULT': {
 #        'CACHE': not DEBUG,

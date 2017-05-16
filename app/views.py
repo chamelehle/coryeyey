@@ -12,6 +12,13 @@ from django.views.decorators.csrf import csrf_exempt
 from .forms import *
 from .models import *
 
+
+
+
+
+
+
+
 @csrf_exempt
 def comments(request):
     if request.method == "GET":

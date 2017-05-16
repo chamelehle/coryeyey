@@ -1,6 +1,6 @@
 {% extends "foundation/base.html" %}
 {% load static %}
-
+{% load easy_maps_tags %}
 
 {% block title %} {{ page_name }} {% endblock %}
 
@@ -41,5 +41,8 @@
 </div>
 <div class="jumbotron">
     <h2>Colorado District Map</h2>
+</div>
+<div>
+  {% easy_map "USA, Colorado" 700 500 7%}
 </div>
 {% endblock %}
