@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import sys
 import os
 from os.path import abspath, basename, dirname, join, normpath
+from django.contrib.gis.geos import GEOSGeometry
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -32,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definitionasdsasdgffsd
 
 INSTALLED_APPS = [
-    'leaflet',
+    #'leaflet',
     #'djgeojson',
     'app.apps.AppConfig',
     'django.contrib.admin',
@@ -126,13 +127,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "hello","static"), os.path.join(BASE_DIR, 'assets'),]
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'webpack_bundles/', # must end with slash
-        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
-        'POLL_INTERVAL': 0.1,
-        'TIMEOUT': None,
-        'IGNORE': ['.+\.hot-update.js', '.+\.map']
-    }
-}
+
+#WEBPACK_LOADER = {
+#    'DEFAULT': {
+#        'CACHE': not DEBUG,
+#        'BUNDLE_DIR_NAME': 'webpack_bundles/', # must end with slash
+#        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+#        'POLL_INTERVAL': 0.1,
+#        'TIMEOUT': None,
+#        'IGNORE': ['.+\.hot-update.js', '.+\.map']
+#    }
+#}
